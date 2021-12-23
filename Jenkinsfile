@@ -21,7 +21,7 @@ pipeline{
         // 定义第一个stage， 完成克隆源码的任务
         stage('Git'){
           steps{
-            git branch: '${BRANCH}', credentialsId: '', url: 'https://github.com/ahwhy/jenkins-demo.git'
+            git branch: '${BRANCH}', credentialsId: '', url: 'https://gitee.com/ahwhya/jenkins-demo.git'
           }
         }
 
